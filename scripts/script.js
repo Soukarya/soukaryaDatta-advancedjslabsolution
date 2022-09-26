@@ -6,7 +6,6 @@ const api = {
   }
 
 const searchBox = document.querySelector('.search-box');
-//searchBox.addEventListener("keypress", cityName);
 searchBox.addEventListener("keypress", (eventData) => { ( eventData.keyCode == 13 ) ? getCityResults(searchBox.value):"" } );
 
 function getCityResults(cityName){
